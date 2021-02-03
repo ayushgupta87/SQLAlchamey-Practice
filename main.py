@@ -24,7 +24,7 @@ for row in result:
         print(item)
 
 # Insert into db
-result1=conn.execute(insert, name='Hello', lastname='haha')
+result1=conn.execute(insert, name='Ayush', lastname='Gupta')
 
 # Update into db
 result2=update.where(students.c.name == 'ye b change').values(name='change')
@@ -33,3 +33,5 @@ conn.execute(result2)
 # Delete into db
 result3=delete.where(students.c.name == 'change')
 conn.execute(result3)
+
+engine.dispose()
