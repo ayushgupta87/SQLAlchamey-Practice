@@ -33,4 +33,3 @@ conn.execute(result2)
 # Delete into db
 result3=delete.where(students.c.name == 'change')
 conn.execute(result3)
-
